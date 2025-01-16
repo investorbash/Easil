@@ -15,7 +15,7 @@
 </head>
 <body>
     <div class="container-fluid d-flex vh-100">
-        <div class="col-md-6 d-flex flex-column justify-content-between p-5" style="background: linear-gradient(to right, #007bff, #00c6ff);">
+        <div class="col-md-6 d-flex flex-column justify-content-between p-5 none" style="background: linear-gradient(to right, #007bff, #00c6ff);">
             <h1 class="text-white">EASIL</h1>
             <div>
                 <h2 class="text-white">Your Path to Smarter Learning</h2>
@@ -51,13 +51,29 @@
                     <div class="mb-3">
                         <a href="#" class="text-primary">Forgot Password?</a>
                     </div>
-                    <button type="submit"  class="btn btn-primary w-100">
-                        <a href="students.html" class="text-white">Sign In</a>
-                    </button>
+                    <a href="students.html" class="btn btn-primary w-100">Sign In</a>
                 </form>
             </div>
         </div>
     </div>
+    <script>
+        if (window.innerWidth < 576) {
+            // document.body.innerHTML = '<h1>This website is not available on mobile devices.</h1>';
+            // document.body.style.display = 'none';
+            alert('This website is not available on mobile devices.');
+        }
+
+        document.addEventListener('keydown', function(event) {
+            if (event.ctrlKey && event.key === 'u' || event.key === 'U') {
+                event.preventDefault(); // Prevent the default action
+                alert('Access Denied!!!');
+            }
+            if (event.key === 'F12') {
+                event.preventDefault(); // Prevent the default action
+                alert('Access Denied!!!');
+            }
+        });
+    </script>
     <script src="script.js"></script>
 </body>
 </html>

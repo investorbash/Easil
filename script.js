@@ -55,3 +55,9 @@ document.addEventListener('keydown', function(event) {
     alert('Access Denied!!!');
   }
 });
+
+if (window.innerWidth < 576) {
+  // document.body.innerHTML = '<h1>This website is not available on mobile devices.</h1>';
+  // document.body.style.display = 'none';
+  alert('This website is not available on mobile devices.');
+}
