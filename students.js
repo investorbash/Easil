@@ -1,6 +1,7 @@
 const hamBurger = document.querySelector(".toggle-btn");
 
-hamBurger.addEventListener("click", function () {
+hamBurger.addEventListener("click", function (e) {
+  e.preventDefault();
   document.querySelector("#sidebar").classList.toggle("expand");
 });
 
@@ -17,25 +18,28 @@ const resultsLink = document.getElementById('results-link');
 const resultsContent = document.getElementById('results-content');
 
 // Add event listeners to menu items
-homeLink.addEventListener('click', () => {
-    // Hide all content containers
-    document.querySelectorAll('#main > div').forEach((container) => {
-        container.style.display = 'none';
-    });
-    // Show the home content container
-    homeContent.style.display = 'block';
+homeLink.addEventListener('click', (e) => {
+  e.preventDefault();
+  // Hide all content containers
+  document.querySelectorAll('#main > div').forEach((container) => {
+    container.style.display = 'none';
+  });
+  // Show the home content container
+  homeContent.style.display = 'block';
 });
 
-assessmentsLink.addEventListener('click', () => {
-    // Hide all content containers
-    document.querySelectorAll('#main > div').forEach((container) => {
-        container.style.display = 'none';
-    });
-    // Show the assessments content container
-    assessmentsContent.style.display = 'block';
+assessmentsLink.addEventListener('click', (e) => {
+  e.preventDefault();
+  // Hide all content containers
+  document.querySelectorAll('#main > div').forEach((container) => {
+    container.style.display = 'none';
+  });
+  // Show the assessments content container
+  assessmentsContent.style.display = 'block';
 });
 
-resultsLink.addEventListener('click', () => {
+resultsLink.addEventListener('click', (e) => {
+  e.preventDefault();
   // Hide all content containers
   document.querySelectorAll('#main > div').forEach((container) => {
     container.style.display = 'none';

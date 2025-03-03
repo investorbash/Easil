@@ -1,0 +1,315 @@
+
+<!-- continuation grading and report (lecturers)-->
+
+<form method="post" class="d-flex ms-5 mb-3">
+    <div class="me-2">
+        <label  for="Keywords" class="form-label">Keywords</label>
+        <input type="search"  class="form-control" placeholder="Search" />
+    </div>
+
+    <div class="me-2">
+        <label for="Grade" class="form-label">Grade</label>
+        <select class="form-select" aria-label="Default select Grade">
+            <option selected>Select Grade</option>
+            <option value="1">Excellent</option>
+            <option value="2">Average</option>
+            <option value="3">Poor</option>
+        </select>
+    </div>
+
+    <div class="me-2">
+        <label  for="date" class="form-label">Date</label>
+        <input type="date" class="form-control" />
+        
+    </div>
+
+    <div>
+        <label for="Filter" class="form-label" style="visibility: hidden;">Filter</label>
+        <br>
+        <button type="button" class="btn btn-secondary">Filter</button>
+    </div>
+</form>
+
+
+<div class="container mx-auto">
+    <div class="bg-white shadow-md rounded-lg overflow-hidden">
+        <table class="min-w-full bg-white">
+            <thead class="bg-gray-200 text-gray-600 uppercase text-sm leading-normal">
+                <tr>
+                    <th class="py-3 px-6 text-left">
+                        Student Name
+                    </th>
+                    <th class="py-3 px-6 text-left">
+                        Passed/Failed
+                    </th>
+                    <th class="py-3 px-6 text-left">
+                        Score
+                    </th>
+                    <th class="py-3 px-6 text-left">
+                        Grade
+                    </th>
+                    <th class="py-3 px-6 text-left">
+                        Details
+                    </th>
+                </tr>
+            </thead>
+            <tbody class="text-gray-600 text-sm font-light">
+                <tr class="border-b border-gray-200 hover:bg-gray-100">
+                    <td class="py-3 px-6 text-left flex items-center">
+                        <img alt="Profile picture of Blessing Sharon" class="w-6 h-6 rounded-full mr-2" height="24" src="https://storage.googleapis.com/a1aa/image/staoWo40RfVhoeEnUCqhTXdo3bcCY858Upicyyu23dU.jpg" width="24"/>
+                        Blessing Sharon
+                    </td>
+                    <td class="py-3 px-6 text-left">
+                        <span class="bg-green-200 text-green-600 py-1 px-3 rounded-full text-xs">
+                        Passed
+                        </span>
+                    </td>
+                    <td class="py-3 px-6 text-left">
+                        20/20
+                        <span class="text-green-600">
+                        (100%)
+                        </span>
+                    </td>
+                    <td class="py-3 px-6 text-left">
+                        <span class="text-green-600">
+                        Excellent
+                        </span>
+                    </td>
+                    <td class="py-3 px-6 text-left">
+                        <button class="bg-white text-gray-800 font-semibold py-1 px-3 border border-gray-400 rounded shadow">
+                        View Details
+                        </button>
+                    </td>
+                </tr>
+                <tr class="border-b border-gray-200 hover:bg-gray-100">
+                    <td class="py-3 px-6 text-left flex items-center">
+                        <img alt="Profile picture of Temitope Adebiyi" class="w-6 h-6 rounded-full mr-2" height="24" src="https://storage.googleapis.com/a1aa/image/ssHL3TjPhVZtAh6nMZoBhgB5HAfBFR_GuOHe4egTP_0.jpg" width="24"/>
+                        Temitope Adebiyi
+                    </td>
+                    <td class="py-3 px-6 text-left">
+                        <span class="bg-red-200 text-red-600 py-1 px-3 rounded-full text-xs">
+                        Failed
+                        </span>
+                    </td>
+                    <td class="py-3 px-6 text-left">
+                        2/20
+                        <span class="text-red-600">
+                        (10%)
+                        </span>
+                    </td>
+                    <td class="py-3 px-6 text-left">
+                        <span class="text-red-600">
+                        Poor
+                        </span>
+                    </td>
+                    <td class="py-3 px-6 text-left">
+                        <button class="bg-white text-gray-800 font-semibold py-1 px-3 border border-gray-400 rounded shadow">
+                        View Details
+                        </button>
+                    </td>
+                </tr>
+                <tr class="border-b border-gray-200 hover:bg-gray-100">
+                    <td class="py-3 px-6 text-left flex items-center">
+                        <img alt="Profile picture of James Benson" class="w-6 h-6 rounded-full mr-2" height="24" src="https://storage.googleapis.com/a1aa/image/r3q2Qo2_b0SW_P1coMG3GN6nf4UJFXKmnRl5n8lwVhA.jpg" width="24"/>
+                        James Benson
+                    </td>
+                    <td class="py-3 px-6 text-left">
+                        <span class="bg-green-200 text-green-600 py-1 px-3 rounded-full text-xs">
+                        Passed
+                        </span>
+                    </td>
+                    <td class="py-3 px-6 text-left">
+                        5/20
+                        <span class="text-blue-600">
+                        (50%)
+                        </span>
+                    </td>
+                    <td class="py-3 px-6 text-left">
+                        <span class="text-blue-600">
+                        Average
+                        </span>
+                    </td>
+                    <td class="py-3 px-6 text-left">
+                        <button class="bg-white text-gray-800 font-semibold py-1 px-3 border border-gray-400 rounded shadow">
+                        View Details
+                        </button>
+                    </td>
+                </tr>
+                <tr class="border-b border-gray-200 hover:bg-gray-100">
+                    <td class="py-3 px-6 text-left flex items-center">
+                        <img alt="Profile picture of Blessing Sharon" class="w-6 h-6 rounded-full mr-2" height="24" src="https://storage.googleapis.com/a1aa/image/staoWo40RfVhoeEnUCqhTXdo3bcCY858Upicyyu23dU.jpg" width="24"/>
+                        Blessing Sharon
+                    </td>
+                    <td class="py-3 px-6 text-left">
+                        <span class="bg-green-200 text-green-600 py-1 px-3 rounded-full text-xs">
+                        Passed
+                        </span>
+                    </td>
+                    <td class="py-3 px-6 text-left">
+                        20/20
+                        <span class="text-green-600">
+                        (100%)
+                        </span>
+                    </td>
+                    <td class="py-3 px-6 text-left">
+                        <span class="text-green-600">
+                        Excellent
+                        </span>
+                    </td>
+                    <td class="py-3 px-6 text-left">
+                        <button class="bg-white text-gray-800 font-semibold py-1 px-3 border border-gray-400 rounded shadow">
+                        View Details
+                        </button>
+                    </td>
+                </tr>
+                <tr class="border-b border-gray-200 hover:bg-gray-100">
+                    <td class="py-3 px-6 text-left flex items-center">
+                        <img alt="Profile picture of Blessing Sharon" class="w-6 h-6 rounded-full mr-2" height="24" src="https://storage.googleapis.com/a1aa/image/staoWo40RfVhoeEnUCqhTXdo3bcCY858Upicyyu23dU.jpg" width="24"/>
+                        Blessing Sharon
+                    </td>
+                    <td class="py-3 px-6 text-left">
+                        <span class="bg-green-200 text-green-600 py-1 px-3 rounded-full text-xs">
+                        Passed
+                        </span>
+                    </td>
+                    <td class="py-3 px-6 text-left">
+                        20/20
+                        <span class="text-green-600">
+                        (100%)
+                        </span>
+                    </td>
+                    <td class="py-3 px-6 text-left">
+                        <span class="text-green-600">
+                        Excellent
+                        </span>
+                    </td>
+                    <td class="py-3 px-6 text-left">
+                        <button class="bg-white text-gray-800 font-semibold py-1 px-3 border border-gray-400 rounded shadow">
+                        View Details
+                        </button>
+                    </td>
+                </tr>
+                <tr class="border-b border-gray-200 hover:bg-gray-100">
+                    <td class="py-3 px-6 text-left flex items-center">
+                        <img alt="Profile picture of Temitope Adebiyi" class="w-6 h-6 rounded-full mr-2" height="24" src="https://storage.googleapis.com/a1aa/image/ssHL3TjPhVZtAh6nMZoBhgB5HAfBFR_GuOHe4egTP_0.jpg" width="24"/>
+                        Temitope Adebiyi
+                    </td>
+                    <td class="py-3 px-6 text-left">
+                        <span class="bg-gray-200 text-gray-600 py-1 px-3 rounded-full text-xs">
+                        ---
+                        </span>
+                    </td>
+                    <td class="py-3 px-6 text-left">
+                        <span class="text-gray-600">
+                        ---
+                        </span>
+                    </td>
+                    <td class="py-3 px-6 text-left">
+                        <span class="text-gray-600">
+                        ---
+                        </span>
+                    </td>
+                    <td class="py-3 px-6 text-left">
+                        <button class="bg-white text-gray-800 font-semibold py-1 px-3 border border-gray-400 rounded shadow">
+                        View Details
+                        </button>
+                    </td>
+                </tr>
+                <tr class="border-b border-gray-200 hover:bg-gray-100">
+                    <td class="py-3 px-6 text-left flex items-center">
+                        <img alt="Profile picture of James Benson" class="w-6 h-6 rounded-full mr-2" height="24" src="https://storage.googleapis.com/a1aa/image/r3q2Qo2_b0SW_P1coMG3GN6nf4UJFXKmnRl5n8lwVhA.jpg" width="24"/>
+                        James Benson
+                    </td>
+                    <td class="py-3 px-6 text-left">
+                        <span class="bg-green-200 text-green-600 py-1 px-3 rounded-full text-xs">
+                        Passed
+                        </span>
+                    </td>
+                    <td class="py-3 px-6 text-left">
+                        5/20
+                        <span class="text-blue-600">
+                        (50%)
+                        </span>
+                    </td>
+                    <td class="py-3 px-6 text-left">
+                        <span class="text-blue-600">
+                        Average
+                        </span>
+                    </td>
+                    <td class="py-3 px-6 text-left">
+                        <button class="bg-white text-gray-800 font-semibold py-1 px-3 border border-gray-400 rounded shadow">
+                        View Details
+                        </button>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
+
+
+
+<!-- simple table -->
+
+<div class="container mx-auto">
+    <div class="bg-white shadow-md rounded-lg overflow-hidden">
+        <table class="min-w-full bg-white">
+            <thead class="bg-gray-200 text-gray-600 uppercase text-sm leading-normal">
+                <tr>
+                    <th class="py-3 px-6 text-left">
+                        Course Title/Code
+                    </th>
+                    <th class="py-3 px-6 text-left">
+                       Department
+                    </th>
+                    <th class="py-3 px-6 text-left">
+                        Lecturers
+                    </th>
+                    <th class="py-3 px-6 text-left">
+                        Enrolled Students
+                    </th>
+                    <th class="py-3 px-6 text-left">
+                        Status
+                    </th>
+                    <th class="py-3 px-6 text-left">
+                        Actions
+                    </th>
+                </tr>
+            </thead>
+            <tbody class="text-gray-600 text-sm font-light">
+                <tr class="border-b border-gray-200 hover:bg-gray-100">
+                    <td class="py-3 px-6 text-left flex items-center">
+                        <img alt="Profile picture of James Benson" class="w-6 h-6 rounded-full mr-2" height="24" src="https://storage.googleapis.com/a1aa/image/r3q2Qo2_b0SW_P1coMG3GN6nf4UJFXKmnRl5n8lwVhA.jpg" width="24"/>
+                        James Benson
+                    </td>
+                    <td class="py-3 px-6 text-left">
+                        <span class="bg-green-200 text-green-600 py-1 px-3 rounded-full text-xs">
+                        Passed
+                        </span>
+                    </td>
+                    <td class="py-3 px-6 text-left">
+                        5/20
+                        <span class="text-blue-600">
+                        (50%)
+                        </span>
+                    </td>
+                    <td class="py-3 px-6 text-left">
+                        <span class="text-blue-600">
+                        Average
+                        </span>
+                    </td>
+                    <td class="py-3 px-6 text-left">
+                        <span class="text-blue-600">
+                        Average
+                        </span>
+                    </td>
+                    <td class="py-3 px-6 text-left">
+                        <button class="bg-white text-gray-800 font-semibold py-1 px-3 border border-gray-400 rounded shadow">
+                        View Details
+                        </button>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
